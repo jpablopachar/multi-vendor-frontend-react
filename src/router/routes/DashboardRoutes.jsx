@@ -1,4 +1,4 @@
-/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react-refresh/only-export-components */ 
 import { lazy } from 'react'
 
 const Dashboard = lazy(() => import('../../components/dashboard'))
