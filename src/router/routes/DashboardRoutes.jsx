@@ -18,7 +18,11 @@ export const dashboardRoutes = [
     element: <Dashboard />,
   },
   {
-    path: 'my-orders',
+    path: '/my-wishlist',
+    element: <Wishlist />,
+  },
+  /* {
+    path: 'dashboard/my-orders',
     element: <Orders />,
   },
   {
@@ -26,7 +30,7 @@ export const dashboardRoutes = [
     element: <ChangePassword />,
   },
   {
-    path: 'my-wishlist',
+    path: '/dashboard/my-wishlist',
     element: <Wishlist />,
   },
   {
@@ -40,5 +44,5 @@ export const dashboardRoutes = [
   {
     path: 'chat/:sellerId',
     element: <Chat />,
-  },
+  } */
 ]
