@@ -1,13 +1,12 @@
-import { Suspense } from 'react'
 import { useSelector } from 'react-redux'
-import { Navigate } from 'react-router-dom'
+import { Navigate, Outlet } from 'react-router-dom'
 
-const ProtectUser = ({ children }) => {
+const ProtectUser = () => {
   const { userInfo } = useSelector(state => state.auth)
 
   if (!userInfo) return <Navigate to="/login" replace={true} />
-  
-  if (userInfo) return <Suspense fallback={null}>{children}</Suspense>
+
+  if (userInfo) return <Outlet />
 }
 
 export default ProtectUser
