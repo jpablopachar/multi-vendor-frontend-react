@@ -14,7 +14,7 @@ import {
   updateMessage,
 } from '../../store/reducers/chatReducer'
 
-const socket = io('http://localhost:3000')
+const socket = io(`${import.meta.env.VITE_API_URL}`)
 
 const Chat = () => {
   const scrollRef = useRef()
@@ -165,7 +165,7 @@ const Chat = () => {
                         >
                           <img
                             className="w-[30px] h-[30px] "
-                            src="http://localhost:3000/images/user.png"
+                            src="/images/user.png"
                             alt=""
                           />
                           <div className="p-2 bg-purple-500 text-white rounded-md">
@@ -182,7 +182,7 @@ const Chat = () => {
                         >
                           <img
                             className="w-[30px] h-[30px] "
-                            src="http://localhost:3000/images/user.png"
+                            src="/images/user.png"
                             alt=""
                           />
                           <div className="p-2 bg-cyan-500 text-white rounded-md">

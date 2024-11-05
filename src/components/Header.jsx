@@ -97,7 +97,7 @@ const Header = () => {
                 </div>
                 <div className="flex group cursor-pointer text-slate-800 text-sm justify-center items-center gap-1 relative after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px] after:absolute before:absolute before:h-[18px] before:bg-[#afafaf] before:w-[1px] before:-left-[20px]">
                   <img
-                    src="http://localhost:5174/src/assets/images/language.png"
+                    src="/images/language.png"
                     alt=""
                   />
                   <span>
@@ -143,7 +143,7 @@ const Header = () => {
               <div className="flex justify-between items-center">
                 <Link to="/">
                   <img
-                    src="http://localhost:5174/src/assets/images/logo.png"
+                    src="/images/logo.png"
                     alt=""
                   />
                 </Link>
@@ -268,14 +268,14 @@ const Header = () => {
           <div className="flex justify-start flex-col gap-6">
             <Link to="/">
               <img
-                src="http://localhost:5174/src/assets/images/logo.png"
+                src="/images/logo.png"
                 alt=""
               />
             </Link>
             <div className="flex justify-start items-center gap-10">
               <div className="flex group cursor-pointer text-slate-800 text-sm justify-center items-center gap-1 relative after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px] after:absolute ">
                 <img
-                  src="http://localhost:5174/src/assets/images/language.png"
+                  src="/images/language.png"
                   alt=""
                 />
                 <span>

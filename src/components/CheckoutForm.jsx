@@ -28,7 +28,7 @@ const CheckoutForm = ({ orderId }) => {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: 'http://localhost:3000/order/confirm',
+        return_url: `${import.meta.env.VITE_API_URL}/api/order/confirm`,
       },
     })
 
