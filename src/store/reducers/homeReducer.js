@@ -1,11 +1,14 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+import axios from 'axios'
 import api from '../../api/api'
+
+const baseURL = `${import.meta.env.VITE_API_URL}/api`
 
 export const getCategories = createAsyncThunk(
   'product/getCategories',
   async (_, { fulfillWithValue }) => {
     try {
-      const { data } = await api.get('/home/get-categories')
+      const { data } = await axios.get(`${baseURL}/home/get-categories`)
 
       return fulfillWithValue(data)
     } catch (error) {
