@@ -126,7 +126,7 @@ const Login = () => {
               </div>
             </div>
             <div className="w-full h-full py-4 pr-4">
-              <img src="http://localhost:5174/src/assets/images/login.jpg" alt="" />
+              <img src="/images/login.jpg" alt="" />
             </div>
           </div>
         </div>

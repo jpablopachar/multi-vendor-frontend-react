@@ -1,8 +1,8 @@
 import { loadStripe } from '@stripe/stripe-js'
-import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FadeLoader } from 'react-spinners'
+import api from '../api/api'
 import error from '../assets/images/error.png'
 import success from '../assets/images/success.png'
 
@@ -56,7 +56,7 @@ const ConfirmOrder = () => {
 
     if (orderId) {
       try {
-        await axios.get(`http://localhost:3000/api/order/confirm/${orderId}`)
+        await api.get(`/order/confirm/${orderId}`)
 
         localStorage.removeItem('orderId')
 
