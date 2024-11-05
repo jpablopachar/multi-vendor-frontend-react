@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FadeLoader } from 'react-spinners'
 import api from '../api/api'
-import error from '../assets/images/error.png'
-import success from '../assets/images/success.png'
 
 const load = async () => {
   return await loadStripe(import.meta.env.VITE_STRIPE_KEY)
@@ -75,7 +73,7 @@ const ConfirmOrder = () => {
     <div className="w-screen h-screen flex justify-center items-center flex-col gap-4">
       {message === 'failed' || message === 'processing' ? (
         <>
-          <img src={error} alt="" />
+          <img src="/images/error.png" alt="" />
           <Link
             className="px-5 py-2 bg-green-500 rounded-sm text-white"
             to="/dashboard/my-orders"
@@ -88,7 +86,7 @@ const ConfirmOrder = () => {
           <FadeLoader />
         ) : (
           <>
-            <img src={success} alt="" />
+            <img src="/images/success.png" alt="" />
             <Link
               className="px-5 py-2 bg-green-500 rounded-sm text-white"
               to="/dashboard/my-orders"
