@@ -66,7 +66,7 @@ const Index = () => {
           </div>
           <div className="flex flex-col justify-start items-start text-slate-600">
             <h2 className="text-3xl font-bold">{cancelledOrder}</h2>
-            <span>Cancelled Orders </span>
+            <span>Cancelled Orders</span>
           </div>
         </div>
       </div>
