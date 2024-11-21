@@ -42,7 +42,7 @@ const Payment = () => {
                   >
                     <div className="flex flex-col gap-[3px] justify-center items-center">
                       <img
-                        src="http://localhost:5173/src/assets/images/payment/cod.jpg"
+                        src="/images/payment/cod.jpg"
                         alt=""
                       />
                     </div>
