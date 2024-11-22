@@ -2,7 +2,7 @@ import {
   LinkAuthenticationElement,
   PaymentElement,
   useElements,
-  useStripe,
+  useStripe
 } from '@stripe/react-stripe-js'
 import { useState } from 'react'
 
@@ -28,7 +28,7 @@ const CheckoutForm = ({ orderId }) => {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: `${import.meta.env.VITE_API_URL}/api/order/confirm`,
+        return_url: `${import.meta.env.VITE_URL}/order/confirm`,
       },
     })
 
